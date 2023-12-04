@@ -13,7 +13,7 @@ function App() {
       try {
         const response = await fetch(API);
         const data = await response.json();
-        console.log(data);
+
         setAllNews(data);
       } catch (error) {
         console.error("Error fetching news data:", error);
